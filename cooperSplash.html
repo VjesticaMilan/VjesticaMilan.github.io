@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <title>Cooper Winery - Red Mountain Estate Vineyard</title>
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            body, html {
+                margin: 0px;
+                padding: 0px;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+        </style>
+        <header>
+            <style>
+                .desktopHeader {
+                    font-family: Catamaran,sans-serif;
+                    max-width: 100%;
+                    padding-top: 25px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    position: relative;
+                    background: #fff;
+                    z-index: 50;
+                }
+
+                .desktopHeader .headerWrapper {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding-bottom: 15px;
+                }
+
+                .desktopHeader .center .mainLogo {
+                    width: 300px;
+                    margin-left: 5px;
+                }
+
+                .desktopHeader .headerWrapper .socialLink {
+                    color: #ababab;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    line-height: 23px;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    transition: color .2s ease-out;
+                    -moz-transition: color .2s ease-out;
+                    -webkit-transition: color .2s ease-out;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .desktopHeader .headerWrapper .socialLink:hover {
+                    color: #b1af6a;
+                }
+
+                .desktopHeader .headerWrapper .center svg {
+                    position: absolute;
+                    left: 50%;
+                    width: 350px;
+                    margin-left: -175px;
+                    height: 25px;
+                    top: 120px;
+                }
+            </style>
+            <div class="desktopHeader">
+                <div class="headerWrapper">
+                    <div class="leftSide">
+                        <a class="socialLink" href="https://www.facebook.com/cooperwine" target="_index"><i class="fa fa-facebook-square"></i><span class="socialLabel">&nbsp&nbspFACEBOOK</span></a>
+                    </div>
+                    <div class="center">
+                        <img class="mainLogo" src="./logo.png" alt="Cooper Logo">
+                        <svg class="eltdf-logo-angled-shape eltdf-logo-svg-top" preserveAspectRatio="none" viewBox="0 0 292.943 35.015">
+                            <path style="fill:rgba(255, 255, 255, 0.99);" d="M0,0c0,0,117.49,35.015,145.89,35.015C174.29,35.015,292.944,0,292.944,0H0z"></path>
+                        </svg>
+                    </div>
+                    <div class="rightSide">
+                        <a class="socialLink" href="https://www.instagram.com/cooperwine" target="_index"><i class="fa fa-instagram"></i><span class="socialLabel">&nbsp&nbspINSTAGRAM</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content" style="max-width: 100%;">
+            <style>
+
+                @font-face {
+                    font-family: Cinzel;
+                    src: url("https://res.cloudinary.com/stackdesign/raw/upload/v1582636341/Cinzel-Regular_siwze1.otf");
+                }
+
+                .buttonBreak {
+                    display: none;
+                }
+
+                .imageContent {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 80%;
+                }
+
+                .imageContent .mainText {
+                    white-space: nowrap;
+                    font-size: 55px;
+                    line-height: 90px;
+                    color: rgb(255, 255, 255);
+                    font-family: Cinzel;
+                    text-transform: uppercase;
+                    letter-spacing: 7px;
+                    visibility: inherit;
+                    transition: none 0s ease 0s;
+                    text-align: center;
+                    border-width: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    min-height: 0px;
+                    min-width: 0px;
+                    max-height: none;
+                    max-width: none;
+                    opacity: 1;
+                }
+
+                .imageContent .tagsText {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: 300;
+                    color: rgb(255, 255, 255);
+                    font-family: Catamaran;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+
+                .tag-16 { font-size: 26px; margin-right: 10px; }
+                .tag-26 { font-size: 43px; margin-right: 10px; }
+                .tag-23 { font-size: 36px; margin-right: 10px; }
+                .tag-13 { font-size: 13px; margin-right: 10px; }
+
+                @media only screen and (max-width: 1650px) {
+                
+                    .content .mainImg {
+                        top: 0px !important;
+                    }
+
+                    .imageContent .mainText {
+                        font-size: 45px !important;
+                    }
+
+                }
+
+                @media only screen and (max-width: 1450px) {
+                    .tag-16 { font-size: 20px !important; margin-right: 10px; }
+                    .tag-26 { font-size: 37px !important; margin-right: 10px; }
+                    .tag-23 { font-size: 30px !important; margin-right: 10px; }
+                    .tag-13 { font-size: 7px  !important; margin-right: 10px; }
+
+                    .imageContent .mainText {
+                        white-space: pre-wrap;
+                    }
+                    .socialLink {
+                        font-size: 16px !important;
+                    }
+                }
+
+                @media only screen and (max-width: 1100px) {
+                    .imageContent .mainText {
+                        margin-top: 30px !important;
+                    }
+                    .imageContent .mainText {
+                        font-size: 35px !important;
+                        line-height: 40px !important; 
+                        margin-bottom: 15px;
+                    }
+                    .content .mainImg {
+                        height: 100% !important;
+                        max-width: 5000% !important;
+                    }
+                    .desktopHeader .center .mainLogo {
+                        margin: 0px 30px;
+                    }
+                }
+
+                @media only screen and (max-width: 975px) {
+                    .desktopHeader .headerWrapper .center svg {
+                        display: none;
+                    }
+                    .socialLink {
+                        font-size: 36px !important;
+                    }
+                    .socialLabel {
+                        display: none;
+                    }
+                }
+
+                @media only screen and (max-width: 800px) {
+                    .content .mainImg {
+                        right: 30%;
+                    }
+
+                    .buttonBreak {
+                        display: block;
+                    }
+
+                    .buttonSpace {
+                        display: none;
+                    }
+                }
+
+                @media only screen and (max-width: 700px) {
+                    .imageContent .mainText {
+                        margin-top: 50px !important;
+                    }
+                }
+
+                .content .mainImg {
+                    position: relative;
+                    z-index: 0;
+                    top: -260px;
+                    max-width: 100%;
+                }
+
+                .button {
+                    color: #fff;
+                    font-family: Catamaran,sans-serif;
+                    text-decoration: none;
+                    border: solid 1px #fff;
+                    padding: 10px 15px;
+                    transition: color .2s ease-out;
+                    -moz-transition: color .2s ease-out;
+                    -webkit-transition: color .2s ease-out;
+                }
+
+                .button:hover {
+                    border: solid 1px #b1af6a;
+                    color: #b1af6a;
+                }
+            </style>
+            <img class="mainImg" src="https://stagingsitedhc.com/wp-content/uploads/2019/12/superlow-1.jpg">
+            <div class="imageContent">
+                <p class="mainText">Home to Bud, The Wine Dog:<br> Official Gate Keeper of Redmountain</p>
+                <img src="https://stagingsitedhc.com/wp-content/uploads/revslider/main_home/separator.png" alt="" data-ww="['115px','115px','115px','115px']" data-hh="['12px','12px','12px','12px']" width="115" height="12" data-no-retina="" style="width: 115px; height: 12px; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 15px;">
+                <p class="tagsText">
+                    <span class="tag-16">#kingsofcarmenere</span>
+                    <span class="tag-26">#estategrown</span>
+                    <span class="tag-23">#carmenere</span>
+                    <span class="tag-26">#gatekeeper</span>
+                    <span class="tag-16">#authenticwine</span>
+                    <br>
+                    <span class="tag-23">#coopturn10</span>
+                    <span class="tag-13">#coopagraphy</span>
+                    <span class="tag-16">#winefarmer</span>
+                    <span class="tag-13">#coopclub</span>
+                    <span class="tag-16">#redmtn</span>
+                </p>
+                <br>
+                <div class="buttons">
+                    <a class="button" href="tel:5095882667">CALL NOW</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a class="button" href="https://maps.google.com?daddr=35306+North+Sunset+Road,+Benton+City,+WA+99320,+USA" target="_index">GOOGLE MAPS</a><span class="buttonSpace">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span class="buttonBreak"><br><br><br><br></span>
+                    <a class="button" href="http://maps.apple.com/?q=35306+North+Sunset+Road,+Benton+City,+WA+99320,+USA" target="_index">APPLE MAPS</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a class="button" href="https://waze.com/ul?q=35306+North+Sunset+Road,+Benton+City,+WA+99320,+USA" target="_index">WAZE</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
